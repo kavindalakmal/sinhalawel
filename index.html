@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <title>Loading Content...</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 90vh;
+            border: none;
+        }
+    </style>
     <script>
-        // Adsterra Direct Link URL
-        const adsterraLink = "https://www.profitablecpmrate.com/dvyphy8zfs?key=2417650075bd2f8d0f64886a1c53103a";
         // Final destination URL after 5 seconds
         const finalLink = "https://salliwala.blogspot.com/";
 
-        // Redirect to Adsterra, then to the final link
-        function redirectToAdsterra() {
-            window.location.href = adsterraLink;
-
-            // Redirect to the final link after 5 seconds
-            setTimeout(() => {
-                window.location.href = finalLink;
-            }, 5000); // 5000 milliseconds = 5 seconds
-        }
+        // Redirect to the final link after 5 seconds
+        setTimeout(() => {
+            window.location.href = finalLink;
+        }, 5000); // 5000 milliseconds = 5 seconds
     </script>
 </head>
-<body onload="redirectToAdsterra()">
-    <h2>Redirecting to your requested content...</h2>
-    <p>Please wait a moment, you will be redirected shortly.</p>
+<body>
+    <h2>Please wait, loading content...</h2>
+    <iframe src="https://www.profitablecpmrate.com/dvyphy8zfs?key=2417650075bd2f8d0f64886a1c53103a"></iframe>
 </body>
 </html>
