@@ -3,47 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading Ad...</title>
-    <style>
-        /* Style for hiding and showing elements */
-        #adContent {
-            width: 100%;
-            height: 90vh;
-            border: none;
-        }
-        #continueButton {
-            display: none;
-            font-size: 18px;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        #continueButton:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Redirecting...</title>
     <script>
-        function showContinueButton() {
-            // Hide the Ad iframe and show the Continue button
-            document.getElementById("adContent").style.display = "none";
-            document.getElementById("continueButton").style.display = "inline-block";
-        }
+        // Adsterra Direct Link URL
+        const adsterraLink = "https://www.profitablecpmrate.com/dvyphy8zfs?key=2417650075bd2f8d0f64886a1c53103a";
+        // Final destination URL after 5 seconds
+        const finalLink = "https://salliwala.blogspot.com/";
 
-        // Set a 5-second delay before showing the Continue button
-        setTimeout(showContinueButton, 5000);
+        // Redirect to Adsterra, then to the final link
+        function redirectToAdsterra() {
+            window.location.href = adsterraLink;
+
+            // Redirect to the final link after 5 seconds
+            setTimeout(() => {
+                window.location.href = finalLink;
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }
     </script>
 </head>
-<body>
-    <h2>Please wait, loading content...</h2>
-    
-    <!-- iframe to load Adsterra direct link -->
-    <iframe id="adContent" src="https://www.profitablecpmrate.com/dvyphy8zfs?key=2417650075bd2f8d0f64886a1c53103a"></iframe>
-    
-    <!-- Button to take user to the final destination, initially hidden -->
-    <a id="continueButton" href="https://final-destination.com">Continue to Content</a>
+<body onload="redirectToAdsterra()">
+    <h2>Redirecting to your requested content...</h2>
+    <p>Please wait a moment, you will be redirected shortly.</p>
 </body>
 </html>
