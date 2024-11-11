@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading...</title>
+    <title>Redirecting...</title>
     <script>
-        // Redirect immediately to the first link
-        const firstLink = "https://www.profitablecpmrate.com/rzhvgwxka8?key=9848a071315946435ad84cf5562aafe7";
+        // Adsterra Direct Link URL
+        const adsterraLink = "https://www.profitablecpmrate.com/dvyphy8zfs?key=2417650075bd2f8d0f64886a1c53103a";
+        // Final destination URL after 5 seconds
         const finalLink = "https://salliwala.blogspot.com/";
 
-        function redirectToFirstLink() {
-            window.location.href = firstLink;
+        // Redirect to Adsterra, then to the final link
+        function redirectToAdsterra() {
+            window.location.href = adsterraLink;
 
-            // After 5 seconds, redirect to the final link
+            // Redirect to the final link after 5 seconds
             setTimeout(() => {
                 window.location.href = finalLink;
-            }, 5000);
+            }, 5000); // 5000 milliseconds = 5 seconds
         }
     </script>
 </head>
-<body onload="redirectToFirstLink()">
-    <h2>Redirecting to the first link...</h2>
-    <p>Please wait, you will be redirected again shortly.</p>
+<body onload="redirectToAdsterra()">
+    <h2>Redirecting to your requested content...</h2>
+    <p>Please wait a moment, you will be redirected shortly.</p>
 </body>
 </html>
