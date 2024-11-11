@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Ad...</title>
+    <style>
+        /* Style for hiding and showing elements */
+        #adContent {
+            width: 100%;
+            height: 90vh;
+            border: none;
+        }
+        #continueButton {
+            display: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #continueButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function showContinueButton() {
+            // Hide the Ad iframe and show the Continue button
+            document.getElementById("adContent").style.display = "none";
+            document.getElementById("continueButton").style.display = "inline-block";
+        }
+
+        // Set a 5-second delay before showing the Continue button
+        setTimeout(showContinueButton, 5000);
+    </script>
+</head>
+<body>
+    <h2>Please wait, loading content...</h2>
+    
+    <!-- iframe to load Adsterra direct link -->
+    <iframe id="adContent" src="https://www.profitablecpmrate.com/dvyphy8zfs?key=2417650075bd2f8d0f64886a1c53103a"></iframe>
+    
+    <!-- Button to take user to the final destination, initially hidden -->
+    <a id="continueButton" href="https://salliwala.blogspot.com/">Continue to Content</a>
+</body>
+</html>
